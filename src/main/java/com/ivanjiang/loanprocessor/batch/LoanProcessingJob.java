@@ -21,7 +21,7 @@ import java.util.List;
  * Pipeline:
  *   CSV → LoanValidationProcessor → LoanScoringProcessor → LoanClassificationProcessor → DB
  */
-@Configuration
+@Configuration("loanProcessingJobConfig")
 @RequiredArgsConstructor
 public class LoanProcessingJob {
 
